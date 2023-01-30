@@ -49,6 +49,24 @@
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
     </table>
-    <button class="mt-5" mat-raised-button color="primary">Primary</button>
+    <button
+      class="mt-5"
+      mat-raised-button
+      color="primary"
+      routerLink="/register"
+    >
+      Agregar
+    </button>
+
+    <!-- modal para registrar un nuevo producto -->
+
+    <h1 mat-dialog-title>{{ title }}</h1>
+    <div mat-dialog-content>
+      <p>{{ message }}</p>
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button (click)="onNoClick()">No</button>
+      <button mat-button [mat-dialog-close]="true">Yes</button>
+    </div>
   </div>
 </div>
