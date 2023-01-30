@@ -10,6 +10,8 @@ import { PagesModule } from './pages/pages.module';
 import { environment } from '../environments/environment';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ListComponent } from './pages/list/list.component';
 
 
 var config = {
@@ -28,13 +30,15 @@ var config = {
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
+    MatDialogModule,
     PagesModule,
+
 
     //firebase imports
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore())
   ],
+  entryComponents:[ListComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

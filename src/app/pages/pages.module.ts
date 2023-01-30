@@ -27,6 +27,6 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatButtonModule,
     RouterModule,
     MatDialogModule
-  ]
+  ],
 })
 export class PagesModule { }
