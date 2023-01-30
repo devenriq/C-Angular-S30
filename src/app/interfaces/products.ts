@@ -1,6 +1,7 @@
 export interface Products {
   id?:string;
-  producto:string;
-  costo:string;
-  foto:string;
+  nombre:string;
+  descripcion:string;
+  precio:string;
+  foto:string
 }

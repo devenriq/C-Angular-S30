@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ListComponent } from './list/list.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatTableModule} from '@angular/material/table';
+import {MatButtonModule} from '@angular/material/button'
 
 
 
@@ -18,6 +19,7 @@ import {MatTableModule} from '@angular/material/table';
     CommonModule,
     MatTableModule,
     MatSlideToggleModule,
+    MatButtonModule
   ]
 })
 export class PagesModule { }
